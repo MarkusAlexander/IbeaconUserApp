@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-C:\Users\markus\Documents\GitHub\IbeaconUserApp\iBeaconImg\iBeaconImg\bin\Debug\iBeaconImg.dll
-=======
-C:\Users\Haxxor\Documents\GitHub\IbeaconUserApp\iBeaconImg\iBeaconImg\bin\Debug\iBeaconImg.dll
->>>>>>> c0112398234c4b007befa7cddad3e6e40d780c24
