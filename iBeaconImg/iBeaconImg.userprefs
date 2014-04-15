@@ -1,12 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iBeaconImg\MainActivity.cs">
-    <Files>
-      <File FileName="iBeaconImg\MainActivity.cs" Line="40" Column="4" />
-      <File FileName="iBeaconImg\Classes\Trilateration.cs" Line="177" Column="33" />
-      <File FileName="iBeaconImg\Classes\iBeacon.cs" Line="15" Column="9" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
