@@ -22,12 +22,20 @@ namespace iBeaconImg
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			var imageView = FindViewById<ImageView> (Resource.Id.demoImageView);
-			ImageView dot = (ImageView) FindViewById(Resource.Drawable.positionCursor);
+
+
 
 			var b1 = new iBeacon();
 			var b2 = new iBeacon();
 			var b3 = new iBeacon();
+
+			b1.Distance = 3;
+			b2.Distance = 3;
+			b3.Distance = 3;
+
+			b1.RSSI = -50;
+			b2.RSSI = -50;
+			b3.RSSI = -50;
 
 			b1.X = 200;
 			b1.Y = 100;
@@ -37,6 +45,9 @@ namespace iBeaconImg
 			b3.Y = 1000;
 
 			var dotpos = tr.Trilaterate (b1, b2, b3);
+
+
+			//Din mamma 
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
@@ -48,12 +59,11 @@ namespace iBeaconImg
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			button.Click += delegate {
-
+				ImageView dot = FindViewById<ImageView> (Resource.Id.dotID);
+				dot.SetImageResource (Resource.Drawable.positionCursor);
+				dot.Right = 20;
+				dot.Top = 20;
 			};
 		}
 	}
 }
-
-
-
-
