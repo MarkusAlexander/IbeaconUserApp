@@ -16,7 +16,8 @@ public final class R {
         public static final int positioncursor=0x7f020002;
     }
     public static final class id {
-        public static final int demoImageView=0x7f050001;
+        public static final int bgView=0x7f050001;
+        public static final int dotView=0x7f050002;
         public static final int myButton=0x7f050000;
     }
     public static final class layout {

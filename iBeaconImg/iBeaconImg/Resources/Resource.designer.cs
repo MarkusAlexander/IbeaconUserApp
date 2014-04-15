@@ -67,7 +67,10 @@ namespace iBeaconImg
 		{
 			
 			// aapt resource value: 0x7f050001
-			public const int demoImageView = 2131034113;
+			public const int bgView = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int dotView = 2131034114;
 			
 			// aapt resource value: 0x7f050000
 			public const int myButton = 2131034112;
