@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:id="@+id/demoImageView"
-        android:scaleType="center"
         android:background="@drawable/PlanritningSpree"
-        android:src="@drawable/positionCursor" />
+        android:src="@drawable/positionCursor"
+        android:scaleType="matrix" />
 </LinearLayout>

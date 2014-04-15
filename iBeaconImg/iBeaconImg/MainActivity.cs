@@ -22,12 +22,21 @@ namespace iBeaconImg
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			var imageView = FindViewById<ImageView> (Resource.Id.demoImageView);
-			ImageView dot = (ImageView) FindViewById(Resource.Drawable.positionCursor);
+			var dot = FindViewById<ImageView> (Resource.Id.demoImageView);
+			dot.SetImageResource(Resource.Drawable.positionCursor);
+
 
 			var b1 = new iBeacon();
 			var b2 = new iBeacon();
 			var b3 = new iBeacon();
+
+			b1.Distance = 3;
+			b2.Distance = 3;
+			b3.Distance = 3;
+
+			b1.RSSI = -40;
+			b2.RSSI = -40;
+			b3.RSSI = -40;
 
 			b1.X = 200;
 			b1.Y = 100;
@@ -37,8 +46,8 @@ namespace iBeaconImg
 			b3.Y = 1000;
 
 			var dotpos = tr.Trilaterate (b1, b2, b3);
-
-			//WOWOWOWOW
+			dot.Left = unchecked((int)dotpos.X);
+			dot.Top = unchecked((int)dotpos.Y);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
