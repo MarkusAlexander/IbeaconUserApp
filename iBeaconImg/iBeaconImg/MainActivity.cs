@@ -29,6 +29,10 @@ namespace iBeaconImg
 			var b2 = new iBeacon();
 			var b3 = new iBeacon();
 
+			b1.Distance = 3;
+			b2.Distance = 3;
+			b3.Distance = 3;
+
 			b1.X = 200;
 			b1.Y = 100;
 			b2.X = 290;

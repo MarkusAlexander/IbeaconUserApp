@@ -145,6 +145,9 @@ namespace iBeaconImg
             var tmpWAP2 = new iBeacon();
             var tmpWAP3 = new iBeacon();
 
+
+
+
             double tmpLat2, tmpLong2, tmpLat3, tmpLong3;
             double tmpSlide, deg;
             double MyLat, MyLong;
@@ -187,7 +190,6 @@ namespace iBeaconImg
             tmpWAP1.Distance = beacon1.Distance;
             tmpWAP2 = myRotationForBeacon(tmpLat2, tmpLong2, beacon2.Distance, deg);
             tmpWAP3 = myRotationForBeacon(tmpLat3, tmpLong3, beacon3.Distance, deg);
-
 
             MyLat = (Math.Pow(tmpWAP1.Distance, 2) - Math.Pow(tmpWAP2.Distance, 2) + Math.Pow(tmpWAP2.X, 2)) / (2 * tmpWAP2.X);
 
