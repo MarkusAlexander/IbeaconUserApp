@@ -38,7 +38,7 @@ namespace iBeaconImg
 
 			var dotpos = tr.Trilaterate (b1, b2, b3);
 
-			//WOWOWOWOW
+			//Din mamma <3
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
