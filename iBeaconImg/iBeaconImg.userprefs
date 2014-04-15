@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iBeaconImg\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="iBeaconImg\MainActivity.cs" Line="39" Column="34" />
+      <File FileName="iBeaconImg\MainActivity.cs" Line="42" Column="15" />
       <File FileName="iBeaconImg\Classes\Trilateration.cs" Line="1" Column="1" />
       <File FileName="iBeaconImg\Classes\iBeacon.cs" Line="1" Column="1" />
     </Files>
