@@ -22,8 +22,7 @@ namespace iBeaconImg
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			var dot = FindViewById<ImageView> (Resource.Id.demoImageView);
-			dot.SetImageResource(Resource.Drawable.positionCursor);
+
 
 
 			var b1 = new iBeacon();
@@ -34,13 +33,10 @@ namespace iBeaconImg
 			b2.Distance = 3;
 			b3.Distance = 3;
 
-<<<<<<< HEAD
-			b1.RSSI = -40;
-			b2.RSSI = -40;
-			b3.RSSI = -40;
+			b1.RSSI = -50;
+			b2.RSSI = -50;
+			b3.RSSI = -50;
 
-=======
->>>>>>> 52a1c195c6dc4b591857e0dbaf956a2dab4ab9a9
 			b1.X = 200;
 			b1.Y = 100;
 			b2.X = 290;
@@ -49,13 +45,9 @@ namespace iBeaconImg
 			b3.Y = 1000;
 
 			var dotpos = tr.Trilaterate (b1, b2, b3);
-<<<<<<< HEAD
-			dot.Left = unchecked((int)dotpos.X);
-			dot.Top = unchecked((int)dotpos.Y);
-=======
+
 
 			//Din mamma <3
->>>>>>> 52a1c195c6dc4b591857e0dbaf956a2dab4ab9a9
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
@@ -67,7 +59,10 @@ namespace iBeaconImg
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			button.Click += delegate {
-
+				ImageView dot = FindViewById<ImageView> (Resource.Id.dotID);
+				dot.SetImageResource (Resource.Drawable.positionCursor);
+				dot.Right = 20;
+				dot.Top = 20;
 			};
 		}
 	}
