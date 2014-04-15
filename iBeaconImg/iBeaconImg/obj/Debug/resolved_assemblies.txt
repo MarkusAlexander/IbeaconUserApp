@@ -1,1 +1,1 @@
-C:\Users\markus\Documents\Projects\iBeaconImg\iBeaconImg\bin\Debug\iBeaconImg.dll
+C:\Users\markus\Documents\GitHub\IbeaconUserApp\iBeaconImg\iBeaconImg\bin\Debug\iBeaconImg.dll
